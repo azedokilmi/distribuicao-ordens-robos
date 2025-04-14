@@ -1,6 +1,6 @@
 # 🤖 Distribuição de Ordens de Produção para Robôs de Solda
 
-Este projeto em Python automatiza a **distribuição de ordens de produção** entre robôs industriais com base nos tempos de execução e regras específicas de alocação. O sistema gera um relatório em **PDF**, incluindo gráficos, estatísticas e os detalhes de cada ordem processada.
+Este projeto em Python automatiza a **distribuição de ordens de produção** entre robôs industriais com base nos tempos de execução e regras específicas de alocação. O sistema gera um relatório de perfil de carga em **PDF**, incluindo gráficos, estatísticas e os detalhes de cada ordem processada.
 
 ---
 
@@ -27,7 +27,7 @@ Este projeto em Python automatiza a **distribuição de ordens de produção** e
 
 4. 📈 Análise Histórica dos Relatórios Diários
 
-   Desde o mês de novembro de 2024, venho gerando esse relatório diariamente a partir do script de distribuição de ordens para robôs, que permite monitorar o comportamento de alocação ao longo do tempo. Cada relatório gerado inclui gráficos e informações sobre o tempo trabalhado e ocioso de cada robô, bem como a quantidade de ordens realizadas manualmente ou com auxílio do robô.
+   Desde o mês de novembro de 2024, venho gerando esse relatório de perfil de carga diariamente a partir do script de distribuição de ordens para robôs, que permite monitorar o comportamento de alocação ao longo do tempo. Cada relatório gerado inclui gráficos e informações sobre o tempo trabalhado e ocioso de cada robô, bem como a quantidade de ordens realizadas manualmente ou com auxílio do robô.
    
    A partir desses relatórios diários, faço uma análise contínua sobre o desempenho dos robôs, identificando tendências e problemas recorrentes a partir de um gráfico que compila o resultado em porcentagem da utilização dos robôs na fabricação das peças, pois quanto mais trabalho automatizado, melhor o desempenho e eficiência da fábrica (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Grafico-da-Utilizacao-dos-Robos.png)).
    
