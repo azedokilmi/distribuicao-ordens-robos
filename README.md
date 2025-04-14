@@ -56,3 +56,15 @@ Para rodar o programa, siga os passos abaixo:
 
    ```bash
    pip install pandas matplotlib fpdf pyexcel-ods
+
+## 📂 O que será gerado
+
+Após rodar o programa, os seguintes arquivos serão gerados:
+
+- 📄 **Relatório em PDF**  
+  Relatório completo com gráficos e alocações.  
+  👉 [Clique aqui para visualizar o relatório em PDF](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Pecas-e-Componentes-Relatorio-Ordens-11-04-2025.pdf)
+
+- 📈 **Gráfico de Tempo dos Robôs**  
+  Gráfico de barras mostrando o tempo trabalhado e o tempo ocioso por robô.  
+  👉 [Clique aqui para visualizar o gráfico em PNG](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Tempo_Robôs_11_04_2025.png)
