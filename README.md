@@ -70,17 +70,17 @@ Após rodar o programa, os seguintes arquivos serão gerados:
   👉 [Clique aqui para visualizar o gráfico em PNG](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Tempo-Robos-11-04-2025.png)
 
 ## 💡 Ideias Futuras
-Interface gráfica (GUI) para facilitar o apontamento e visualização dos dados
+Interface gráfica (GUI) para facilitar o apontamento e visualização dos dados.
 
-Geração de arquivos via navegador (aplicação web)
+Geração de arquivos via navegador (aplicação web).
 
-Integração com banco de dados para atualização automática
+Integração com banco de dados para atualização automática.
 
-Processamento automático ao invés de manual da programação no arquivo .ods pelo APS Drummer
+Processamento automático ao invés de manual da programação no arquivo .ods pelo APS Drummer.
 
-API REST para integrar o sistema com ERPs como SAP
+API REST para integrar o sistema com ERPs como SAP.
 
-Envio automático da programação específica diariamente para os robôs de solda
+Envio automático da programação específica diariamente para os robôs de solda.
 
 ## ✍️ Autor
 Feito com dedicação por Pedro Cicilini de Nadai 💻
