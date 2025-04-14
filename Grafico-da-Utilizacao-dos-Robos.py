@@ -143,7 +143,7 @@ def plot_percentages(data_points):
     
     # Caminho para salvar o gráfico na área de trabalho
     desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
-    save_path = os.path.join(desktop_path, "Gráfico da Utilização dos Robôs.png")
+    save_path = os.path.join(desktop_path, "Grafico-da-Utilização-dos-Robos.png")
     plt.savefig(save_path, dpi=300, bbox_inches="tight", facecolor='lightgray')  # Salvar com fundo cinza e 300 DPI
     logging.info(f"Gráfico salvo em: {save_path}")
     
