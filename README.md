@@ -31,14 +31,15 @@ Este projeto em Python automatiza a **distribuição de ordens de produção** e
    
    A partir desses relatórios diários, faço uma análise contínua sobre o desempenho dos robôs, identificando tendências e problemas recorrentes a partir de um gráfico que compila o resultado em porcentagem da utilização dos robôs na fabricação das peças, pois quanto mais trabalho automatizado, melhor o desempenho e eficiência da fábrica (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Grafico-da-Utilizacao-dos-Robos.png)).
    
-   Para executar o arquivo de atualização do gráfico de tendência dos relatórios é necessário seguir o passo a seguir:
+   Para executar o arquivo de atualização (realizado diariamente) do gráfico de tendência dos relatórios é necessário primeiro agrupar todos os relatórios gerados em uma pasta localizada na área de trabalho e nomeada como '**Relatorios-Robo**' e posteriormente seguir com a execução do programa:
    
    **Execute o programa**: No terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo `.py` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Grafico-da-Utilizacao-dos-Robos.py)) deve estar localizado e execute o comando abaixo:
    
-   Após a execução do script, os arquivos de saída serão gerados na mesma pasta onde o programa foi executado.
    ```bash
    python Grafico-da-utilizacao-dos-robos.py
    ```
+   
+   Após a execução do script, os arquivos de saída serão gerados na mesma pasta onde o programa foi executado.
    
    A seguir, explico como é feita essa análise:
    
