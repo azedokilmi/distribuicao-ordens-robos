@@ -27,9 +27,20 @@ Este projeto em Python automatiza a **distribuição de ordens de produção** e
 
 4. 📈 Análise Histórica dos Relatórios Diários
 
-   Desde o mês de novembro de 2024, venho gerando esse relatório diariamente a partir do script de distribuição de ordens para robôs, que permite monitorar o comportamento de alocação ao longo do tempo. Cada relatório gerado inclui gráficos e informações sobre o tempo trabalhado e ocioso de cada robô, bem como a quantidade de ordens realizadas manualmente ou com auxílio do robô. 
+   Desde o mês de novembro de 2024, venho gerando esse relatório diariamente a partir do script de distribuição de ordens para robôs, que permite monitorar o comportamento de alocação ao longo do tempo. Cada relatório gerado inclui gráficos e informações sobre o tempo trabalhado e ocioso de cada robô, bem como a quantidade de ordens realizadas manualmente ou com auxílio do robô.
    
-   A partir desses relatórios diários, faço uma análise contínua sobre o desempenho dos robôs, identificando tendências e problemas recorrentes (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Gr%C3%A1fico%20da%20Utiliza%C3%A7%C3%A3o%20dos%20Rob%C3%B4s.png)). A seguir, explico como é feita essa análise:
+   A partir desses relatórios diários, faço uma análise contínua sobre o desempenho dos robôs, identificando tendências e problemas recorrentes a partir de um gráfico que compila o resultado em porcentagem da utilização dos robôs na fabricação das peças, pois quanto mais trabalho automatizado, melhor o desempenho e eficiência da fábrica (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Grafico-da-Utilizacao-dos-Robos.png)).
+   
+   Para executar o arquivo de atualização do gráfico de tendência dos relatórios é necessário seguir o passo a seguir:
+   
+   **Execute o programa**: No terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo `.py` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Grafico-da-Utilizacao-dos-Robos.py)) deve estar localizado e execute o comando abaixo:
+   
+   Após a execução do script, os arquivos de saída serão gerados na mesma pasta onde o programa foi executado.
+   ```bash
+   python Grafico-da-utilizacao-dos-robos.py
+   ```
+   
+   A seguir, explico como é feita essa análise:
    
    - Verificação das Ordens Processadas
      
@@ -55,7 +66,7 @@ Este projeto em Python automatiza a **distribuição de ordens de produção** e
    
      - Com base na análise histórica, recomendo ajustes nas regras de alocação, como reconfigurar a distribuição de tarefas entre robôs específicos e genéricos, ajustar os tempos de alocação ou mesmo redistribuir a carga de trabalho manual para evitar falhas na produção.
 
-5. 🎯 **Análise complementar de desempenho dos robôs**
+6. 🎯 **Análise complementar de desempenho dos robôs**
 
    Além da alocação automatizada, este projeto permite uma análise técnica aprofundada da performance de cada robô, baseada nas informações presentes no gráfico e no relatório gerado. Esses dados fornecem uma visão estratégica para tomada de decisão em engenharia de produção.
 
