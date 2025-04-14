@@ -57,6 +57,11 @@ Para rodar o programa, siga os passos abaixo:
    ```bash
    pip install pandas matplotlib fpdf pyexcel-ods
 
+3. **Execute o programa: No terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo .py deve estar localizado e execute o comando abaixo:
+   python Relatorio-das-Ordens-dos-Robos.py (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Relatorio-das-Ordens-dos-Robos.py))
+
+Após a execução do script, os arquivos de saída serão gerados na mesma pasta onde o programa foi executado.
+
 ## 📂 O que será gerado
 
 Após rodar o programa, os seguintes arquivos serão gerados:
