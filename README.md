@@ -33,19 +33,26 @@ Este projeto em Python automatiza a **distribuição de ordens de produção** e
 
 ⚠️ Ambos os arquivos devem estar na **área de trabalho**:
 
-- `pecas-robo.csv`  
+- `peças_robô.csv`  
   → Deve conter duas colunas:
   - `id` → código da peça
   - `tempo` → tempo por peça em minutos
 
-- `ORDENS-REFERENTE-A-XX.XX.XXXX.ods`  
+- `ORDENS REFERENTE A XX.XX.XXXX.ods`  
   → Gerado automaticamente pelo APS Drummer com base em **3 dias úteis à frente**.
 
 ---
 
 ### ▶️ Rodar o Programa
 
-Execute o script com Python:
+Para rodar o programa, siga os passos abaixo:
 
-```bash
-python "Relatorio-das-Ordens-dos-Robos.py"
+1. **Certifique-se de que os arquivos necessários estão na área de trabalho:**
+   - O arquivo `peças_robô.csv` contendo as peças e seus tempos de fabricação.
+   - O arquivo `ORDENS REFERENTE A XX.XX.XXXX.ods` gerado pelo APS Drummer com as ordens de produção (com data futura de 3 dias úteis).
+
+2. **Instale as dependências do projeto** (caso ainda não tenha feito):
+   Abra o terminal (ou o prompt de comando) e execute o seguinte comando para instalar as bibliotecas necessárias:
+
+   ```bash
+   pip install pandas matplotlib fpdf pyexcel-ods
