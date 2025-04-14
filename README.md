@@ -25,7 +25,37 @@ Este projeto em Python automatiza a **distribuição de ordens de produção** e
      - Ordens não alocadas
      - Resumo estatístico completo
 
-4. 🎯 **Análise complementar de desempenho dos robôs**
+4. 📈 Análise Histórica dos Relatórios Diários
+
+   Desde o mês de novembro de 2024, venho gerando esse relatório diariamente a partir do script de distribuição de ordens para robôs, que permite monitorar o comportamento de alocação ao longo do tempo. Cada relatório gerado inclui gráficos e informações sobre o tempo trabalhado e ocioso de cada robô, bem como a quantidade de ordens realizadas manualmente ou com auxílio do robô. 
+   
+   A partir desses relatórios diários, faço uma análise contínua sobre o desempenho dos robôs, identificando tendências e problemas recorrentes (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Gr%C3%A1fico%20da%20Utiliza%C3%A7%C3%A3o%20dos%20Rob%C3%B4s.png)). A seguir, explico como é feita essa análise:
+   
+   - Verificação das Ordens Processadas
+     
+     - Ordens automatizadas: São aquelas que foram atribuídas aos robôs automaticamente pelo sistema de alocação, de acordo com a programação do APS Drummer e o tempo de produção.
+   
+     - Ordens manuais: São aquelas que foram atribuídas ao trabalho manual pelo sistema de alocação, de acordo com a programação do APS Drummer e o tempo de produção (normalmente devido a complexidade da peça ou falta de infraestrutura para realizar a solda no robô).
+   
+   - Análise Comportamental dos Robôs
+   
+     - Comportamento diário: Verifico como as ordens são distribuídas entre os robôs e se algum robô está sendo sobrecarregado com ordens ou se está subutilizado. Essa análise é crucial para ajustar a carga de trabalho e evitar falhas ou gargalos.
+   
+     - Robôs subutilizados: Identifico se algum robô está frequentemente ocioso, o que pode indicar que ele não está sendo alocado corretamente ou que há capacidade excessiva para o volume de produção.
+   
+     - Robôs sobrecarregados: Verifico se algum robô está atingindo seu limite de tempo diário (528 minutos), o que indica que ele está sobrecarregado e pode precisar de redistribuição de tarefas para evitar falhas de produção ou atraso.
+   
+   - Análise de Tendências
+   
+     - Aumento de ordens manuais: Através dos relatórios diários, posso identificar se há um aumento no número de ordens sendo feitas manualmente, o que pode indicar a necessidade de ajustes na programação do sistema APS Drummer ou na alocação dos robôs.
+   
+     - Impacto de mudanças nas ordens: Quando há uma mudança significativa na programação ou um aumento da demanda, essa análise ajuda a entender como os robôs estão lidando com essas alterações, fornecendo informações valiosas para otimização futura.
+   
+   - Ajustes e Recomendações
+   
+     - Com base na análise histórica, recomendo ajustes nas regras de alocação, como reconfigurar a distribuição de tarefas entre robôs específicos e genéricos, ajustar os tempos de alocação ou mesmo redistribuir a carga de trabalho manual para evitar falhas na produção.
+
+5. 🎯 **Análise complementar de desempenho dos robôs**
 
    Além da alocação automatizada, este projeto permite uma análise técnica aprofundada da performance de cada robô, baseada nas informações presentes no gráfico e no relatório gerado. Esses dados fornecem uma visão estratégica para tomada de decisão em engenharia de produção.
 
