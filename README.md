@@ -7,7 +7,7 @@ Este projeto em Python automatiza a **distribuição de ordens de produção** e
 ## ⚙️ Como Funciona?
 
 1. 📂 **Leitura dos arquivos**
-   - Lê uma planilha de programação `.ods` com as ordens de produção, referenciando códigos de itens montados e soldados manualmente e em robôs (arquivo gerado automaticamente pelo sistema APS Drummer com data futura de 3 dias úteis — ou seja, a data do arquivo será a data atual + 3 dias úteis).
+   - Lê uma planilha de programação `.ods` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/ORDENS-REFERENTE-A-17.04.2025.ods)) com as ordens de produção, referenciando códigos de itens montados e soldados manualmente e em robôs (arquivo gerado automaticamente pelo sistema APS Drummer com data futura de 3 dias úteis — ou seja, a data do arquivo será a data atual + 3 dias úteis).
    - Lê um `.csv` com todas as peças catalogadas que são feitas **apenas nos robôs de solda** e seus respectivos tempos de fabricação, incluindo pré-montagem e solda (arquivo `pecas-robo.csv`).
 
 2. 🧠 **Processamento**
