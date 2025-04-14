@@ -31,18 +31,18 @@ Este projeto em Python automatiza a **distribuição de ordens de produção** e
 
    Os principais pontos analisáveis incluem:
    
-   🧮 Tempo médio de execução por ordem
+   - 🧮 Tempo médio de execução por ordem
    
    Permite identificar se há robôs enfrentando ordens mais complexas ou demoradas.
    
    Fórmula sugerida:
    tempo total trabalhado do robô / número de ordens atribuídas ao robô
    
-   ⚠️ Alocação de tarefas críticas
+   - ⚠️ Alocação de tarefas críticas
    
    Avalia quantos robôs operaram próximos do limite diário de tempo (528 minutos), o que pode indicar risco de sobrecarga ou necessidade de redistribuição futura.
    
-   📊 Eficiência operacional
+   - 📊 Eficiência operacional
    
    Compara o tempo útil de trabalho com o tempo ocioso.
    
@@ -50,11 +50,11 @@ Este projeto em Python automatiza a **distribuição de ordens de produção** e
    
    Ajuda a visualizar quais robôs estão subutilizados ou operando no limite.
    
-   🧩 Balanceamento entre os robôs
+   - 🧩 Balanceamento entre os robôs
    
    Verifica se a carga está sendo bem distribuída ou se há tendência de concentração em robôs genéricos ou específicos. Esse dado pode orientar ajustes nas regras de alocação ou até mesmo na configuração do parque fabril.
    
-   🔎 Análise dos códigos mais recorrentes
+   - 🔎 Análise dos códigos mais recorrentes
    
    A repetição de determinados códigos de peça pode sugerir uma padronização crescente ou um pico na demanda de itens específicos, orientando decisões de estoque, setup ou abastecimento.
 
@@ -117,13 +117,11 @@ Geração de arquivos via navegador (aplicação web).
 
 Integração com banco de dados para atualização automática.
 
-Processamento automático ao invés de manual da programação no arquivo .ods pelo APS Drummer.
-
 API REST para integrar o sistema com ERPs como SAP.
 
-Envio automático da programação específica diariamente para os robôs de solda.
+Envio automático diário da programação específica para os robôs.
 
-Essa análise pode ser feita manualmente com base no relatório em PDF ou, futuramente, ser automatizada com dashboards interativos (Dash, Power BI etc.) ou sistemas integrados de monitoramento.
+Automação com dashboards interativos (Dash, Power BI etc.) ou sistemas integrados de monitoramento.
 
 ## ✍️ Autor
 Feito com dedicação por Pedro Cicilini de Nadai 💻
