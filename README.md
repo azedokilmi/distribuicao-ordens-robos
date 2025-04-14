@@ -19,7 +19,7 @@ Este projeto em Python automatiza a **distribuição de ordens de produção** e
      - Tempo total de trabalho diário (528 minutos)
 
 3. 📊 **Relatório**
-   - Geração de um gráfico de tempo trabalhado e ocioso por robô.
+   - Geração de um gráfico de tempo trabalhado e ocioso por robô (perfil de carga).
    - Criação de um PDF com:
      - Ordens alocadas por robô
      - Ordens não alocadas
