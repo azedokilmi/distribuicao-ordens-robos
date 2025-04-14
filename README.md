@@ -1,4 +1,4 @@
-# 🤖 Distribuição de Ordens para Robôs
+# 🤖 Distribuição de Ordens de Produção para Robôs de Solda
 
 Este projeto em Python automatiza a **distribuição de ordens de produção** entre robôs industriais com base nos tempos de execução e regras específicas de alocação. O sistema gera um relatório em **PDF**, incluindo gráficos, estatísticas e os detalhes de cada ordem processada.
 
