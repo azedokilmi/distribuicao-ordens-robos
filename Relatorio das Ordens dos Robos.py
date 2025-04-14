@@ -144,7 +144,7 @@ def obter_nome_arquivo_ods():
     data_futura = hoje
     # O número 5 representa os dias úteis da semana: SEG(0)/TER(1)/QUA(2)/QUI(3)/SEX(4)
     # Precisa ser mudada a parte "dias_uteis < 4:"
-    while dias_uteis < 6:
+    while dias_uteis < 3:
         data_futura += timedelta(days=1)
         if data_futura.weekday() < 5:  # Segunda a sexta-feira
             dias_uteis += 1
