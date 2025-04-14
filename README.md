@@ -1,29 +1,29 @@
 # 🤖 Distribuição de Ordens de Produção para Robôs de Solda
 
-Este projeto em Python automatiza a **distribuição de ordens de produção** entre robôs industriais com base nos tempos de execução e regras específicas de alocação. O sistema gera um relatório de perfil de carga em **PDF**, incluindo gráficos, estatísticas e os detalhes de cada ordem processada.
+Este projeto em Python automatiza a distribuição de ordens de produção entre robôs industriais com base nos tempos de execução e regras específicas de alocação. O sistema gera um relatório de perfil de carga em PDF, incluindo gráficos, estatísticas e os detalhes de cada ordem processada.
 
 ---
 
 ## ⚙️ Como Funciona?
 
 1. 📂 **Leitura dos arquivos**
-   - Lê uma planilha de programação `.ods` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/ORDENS-REFERENTE-A-17.04.2025.ods)) com as ordens de produção, referenciando códigos de itens montados e soldados manualmente e em robôs (arquivo gerado automaticamente pelo sistema APS Drummer com data futura de 3 dias úteis — ou seja, a data do arquivo será a data atual + 3 dias úteis).
-   - Lê um `.csv` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/pecas-robo.csv)) com todas as peças catalogadas que são feitas **apenas nos robôs de solda** e seus respectivos tempos de fabricação, incluindo pré-montagem e solda (arquivo `pecas-robo.csv`).
+   - Lê uma planilha de programação `.ods` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/ORDENS-REFERENTE-A-17.04.2025.ods)) com as ordens de produção, referenciando códigos de itens montados e soldados manualmente e em robôs (arquivo gerado automaticamente pelo sistema APS Drummer com data futura de 3 dias úteis — ou seja, a data do arquivo será a data atual + 3 dias úteis, desconsiderando sábados e domingos).
+   - Lê um `.csv` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/pecas-robo.csv)) com todas as peças catalogadas que são feitas apenas nos robôs de solda e seus respectivos tempos de fabricação, incluindo pré-montagem e solda.
 
 2. 🧠 **Processamento**
    - Filtra ordens válidas conforme as peças cadastradas. Se a ordem no `.ods` possuir um código presente no `.csv`, ela é reconhecida como feita no robô e será processada.
    - Agrupa ordens semelhantes para otimizar a distribuição da produção.
    - Distribui as ordens entre os robôs considerando:
-     - Robôs específicos para determinadas peças
-     - Robôs genéricos com balanceamento de carga
-     - Tempo total de trabalho diário (528 minutos)
+     - Robôs específicos para determinadas peças.
+     - Robôs genéricos com balanceamento de carga.
+     - Tempo total de trabalho diário (528 minutos).
 
 3. 📊 **Relatório**
    - Geração de um gráfico de tempo trabalhado e ocioso por robô (perfil de carga).
    - Criação de um PDF com:
-     - Ordens alocadas por robô
-     - Ordens não alocadas
-     - Resumo estatístico completo
+     - Ordens alocadas por robô.
+     - Ordens não alocadas.
+     - Resumo estatístico completo.
 
 4. 📈 Análise Histórica dos Relatórios Diários
 
@@ -36,7 +36,7 @@ Este projeto em Python automatiza a **distribuição de ordens de produção** e
    1. **Agrupar os relatórios**:
    Crie uma pasta chamada '**Relatorios-Robo**' e coloque todos os relatórios gerados dentra dela.
 
-   2. **Execute o programa**: No terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo `.py` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Grafico-da-Utilizacao-dos-Robos.py)) deve estar localizado e execute o comando abaixo:
+   2. **Execute o programa**: no terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo `.py` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Grafico-da-Utilizacao-dos-Robos.py)) deve estar localizado e execute o comando abaixo:
 
    Após a execução do script, os arquivos de saída serão gerados na mesma pasta onde o programa foi executado.
    
@@ -126,7 +126,7 @@ Para rodar o programa, siga os passos abaixo:
 
 1. **Certifique-se de que os arquivos necessários estão na área de trabalho:**
    - O arquivo `pecas-robo.csv` contendo as peças e seus tempos de fabricação.
-   - O arquivo `ORDENS-REFERENTE-A-XX.XX.XXXX.ods` gerado pelo APS Drummer com as ordens de produção (com data futura de 3 dias úteis).
+   - O arquivo `ORDENS-REFERENTE-A-XX.XX.XXXX.ods` com as ordens de produção com data futura de 3 dias úteis.
 
 2. **Instale as dependências do projeto** (caso ainda não tenha feito):
    Abra o terminal (ou o prompt de comando) e execute o seguinte comando para instalar as bibliotecas necessárias:
@@ -135,7 +135,7 @@ Para rodar o programa, siga os passos abaixo:
    pip install pandas matplotlib fpdf pyexcel-ods
    ```
 
-3. **Execute o programa**: No terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo `.py` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Relatorio-das-Ordens-dos-Robos.py)) deve estar localizado e execute o comando abaixo:
+3. **Execute o programa**: no terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo `.py` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Relatorio-das-Ordens-dos-Robos.py)) deve estar localizado e execute o comando abaixo:
    
    Após a execução do script, os arquivos de saída serão gerados na mesma pasta onde o programa foi executado.
    ```bash
