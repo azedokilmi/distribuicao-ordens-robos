@@ -25,6 +25,39 @@ Este projeto em Python automatiza a **distribuição de ordens de produção** e
      - Ordens não alocadas
      - Resumo estatístico completo
 
+4. 🎯 **Análise complementar de desempenho dos robôs**
+
+   Além da alocação automatizada, este projeto permite uma análise técnica aprofundada da performance de cada robô, baseada nas informações presentes no gráfico e no relatório gerado. Esses dados fornecem uma visão estratégica para tomada de decisão em engenharia de produção.
+
+   Os principais pontos analisáveis incluem:
+   
+   🧮 Tempo médio de execução por ordem
+   
+   Permite identificar se há robôs enfrentando ordens mais complexas ou demoradas.
+   
+   Fórmula sugerida:
+   tempo total trabalhado do robô / número de ordens atribuídas ao robô
+   
+   ⚠️ Alocação de tarefas críticas
+   
+   Avalia quantos robôs operaram próximos do limite diário de tempo (528 minutos), o que pode indicar risco de sobrecarga ou necessidade de redistribuição futura.
+   
+   📊 Eficiência operacional
+   
+   Compara o tempo útil de trabalho com o tempo ocioso.
+   
+   Fórmula: eficiência (%) = (tempo trabalhado / 528) × 100
+   
+   Ajuda a visualizar quais robôs estão subutilizados ou operando no limite.
+   
+   🧩 Balanceamento entre os robôs
+   
+   Verifica se a carga está sendo bem distribuída ou se há tendência de concentração em robôs genéricos ou específicos. Esse dado pode orientar ajustes nas regras de alocação ou até mesmo na configuração do parque fabril.
+   
+   🔎 Análise dos códigos mais recorrentes
+   
+   A repetição de determinados códigos de peça pode sugerir uma padronização crescente ou um pico na demanda de itens específicos, orientando decisões de estoque, setup ou abastecimento.
+
 ---
 
 ## 🚀 Passo a Passo da Execução
@@ -56,12 +89,14 @@ Para rodar o programa, siga os passos abaixo:
 
    ```bash
    pip install pandas matplotlib fpdf pyexcel-ods
+   ```
 
 3. **Execute o programa**: No terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo `.py` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Relatorio-das-Ordens-dos-Robos.py)) deve estar localizado e execute o comando abaixo:
    
    Após a execução do script, os arquivos de saída serão gerados na mesma pasta onde o programa foi executado.
    ```bash
    python Relatorio-das-Ordens-dos-Robos.py
+   ```
 
 ## 📂 O que será gerado
 
@@ -87,6 +122,8 @@ Processamento automático ao invés de manual da programação no arquivo .ods p
 API REST para integrar o sistema com ERPs como SAP.
 
 Envio automático da programação específica diariamente para os robôs de solda.
+
+Essa análise pode ser feita manualmente com base no relatório em PDF ou, futuramente, ser automatizada com dashboards interativos (Dash, Power BI etc.) ou sistemas integrados de monitoramento.
 
 ## ✍️ Autor
 Feito com dedicação por Pedro Cicilini de Nadai 💻
