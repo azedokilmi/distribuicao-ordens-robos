@@ -192,5 +192,5 @@ Automação com dashboards interativos (Dash, Power BI etc.) ou sistemas integra
 
 ## ✍️ Autor
 
-Feito com dedicação por Pedro Cicilini de Nadai 💻
-GitHub: @azedokilmi
+Feito com dedicação por Pedro Cicilini de Nadai 💪\
+GitHub: [@azedokilmi](https://github.com/azedokilmi)
