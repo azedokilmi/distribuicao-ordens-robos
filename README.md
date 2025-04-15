@@ -8,9 +8,11 @@ Este projeto em Python automatiza a distribuição de ordens de produção entre
 
 1. 📂 **Leitura dos arquivos**
    - Lê uma planilha de programação `.ods` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/ORDENS-REFERENTE-A-17.04.2025.ods)) com as ordens de produção, referenciando códigos de itens montados e soldados manualmente e em robôs (arquivo gerado automaticamente pelo sistema APS Drummer com data futura de 3 dias úteis — ou seja, a data do arquivo será a data atual + 3 dias úteis, desconsiderando sábados e domingos).
-   - Lê um `.csv` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/pecas-robo.csv)) com todas as peças catalogadas que são feitas apenas nos robôs de solda e seus respectivos tempos de fabricação, incluindo pré-montagem e solda.
 
    ![Prévia da Planilha .ods](https://github.com/azedokilmi/distribuicao-ordens-robos/raw/main/preview-ods.png)
+
+   - Lê um `.csv` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/pecas-robo.csv)) com todas as peças catalogadas que são feitas apenas nos robôs de solda e seus respectivos tempos de fabricação, incluindo pré-montagem e solda.
+
    ![Prévia do Arquivo .csv](https://github.com/azedokilmi/distribuicao-ordens-robos/raw/main/preview-csv.png)
 
 2. 🧠 **Processamento**
@@ -72,7 +74,7 @@ Este projeto em Python automatiza a distribuição de ordens de produção entre
    
      - Com base na análise histórica, recomendo ajustes nas regras de alocação, como reconfigurar a distribuição de tarefas entre robôs específicos e genéricos, ajustar os tempos de alocação ou mesmo redistribuir a carga de trabalho manual para evitar falhas na produção.
 
-6. 🎯 **Análise complementar de desempenho dos robôs**
+5. 🎯 **Análise complementar de desempenho dos robôs**
 
    Além da alocação automatizada, este projeto permite uma análise técnica aprofundada da performance de cada robô, baseada nas informações presentes no gráfico e no relatório gerado. Esses dados fornecem uma visão estratégica para tomada de decisão em engenharia de produção.
 
