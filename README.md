@@ -161,6 +161,8 @@ Após rodar o programa, os seguintes arquivos serão gerados:
   Gráfico de barras mostrando o tempo trabalhado e o tempo ocioso por robô.  
   👉 [Clique aqui para visualizar o gráfico em PNG](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Tempo-Robos-11-04-2025.png)
 
+  ![Gráfico de Tempo dos Robôs - 11/04/2025](https://github.com/azedokilmi/distribuicao-ordens-robos/raw/main/Tempo-Robos-11-04-2025.png)
+
 ## 💡 Ideias Futuras
 Interface gráfica (GUI) para facilitar o apontamento e visualização dos dados.
 
