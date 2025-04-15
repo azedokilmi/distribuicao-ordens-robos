@@ -150,7 +150,7 @@ def plot_percentages(data_points):
     # plt.show()
 
 # Caminho para a pasta com os PDFs
-folder_path = r"C:\Users\pcicilini.CORP\Desktop\Relatorios-Robo"
+folder_path = r"C:\Users\pcicilini.CORP\Desktop\relatorios-robo"
 
 # Processar os PDFs e obter as porcentagens ordenadas por data
 data_points = process_pdfs_in_folder(folder_path)
