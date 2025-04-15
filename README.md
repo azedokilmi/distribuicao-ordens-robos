@@ -43,9 +43,7 @@ Este projeto em Python automatiza a distribuição de ordens de produção entre
    1. **Agrupar os relatórios**:
    Crie uma pasta chamada '**relatorios-robo**' e coloque todos os relatórios gerados dentra dela.
 
-   2. **Execute o programa**:
-     
-      No terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo `.py` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Grafico-da-Utilizacao-dos-Robos.py)) deve estar localizado e execute o comando abaixo:
+   2. **Execute o programa**: No terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo `.py` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Grafico-da-Utilizacao-dos-Robos.py)) deve estar localizado e execute o comando abaixo:
 
    Após a execução do script, os arquivos de saída serão gerados na mesma pasta onde o programa foi executado.
    
