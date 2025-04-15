@@ -19,16 +19,16 @@ Este projeto em Python automatiza a distribuição de ordens de produção entre
    - Filtra ordens válidas conforme as peças cadastradas. Se a ordem no `.ods` possuir um código presente no `.csv`, ela é reconhecida como feita no robô e será processada.
    - Agrupa ordens semelhantes para otimizar a distribuição da produção.
    - Distribui as ordens entre os robôs considerando:
-     - Robôs específicos para determinadas peças.
-     - Robôs genéricos com balanceamento de carga.
-     - Tempo total de trabalho diário (528 minutos).
+     - Robôs específicos para determinadas peças
+     - Robôs genéricos com balanceamento de carga
+     - Tempo total de trabalho diário (528 minutos)
 
 3. 📊 **Relatório**
    - Geração de um gráfico de tempo trabalhado e ocioso por robô (perfil de carga).
    - Criação de um PDF com:
-     - Ordens alocadas por robô.
-     - Ordens não alocadas.
-     - Resumo estatístico completo.
+     - Ordens alocadas por robô
+     - Ordens não alocadas
+     - Resumo estatístico completo
 
 4. 📈 Análise Histórica dos Relatórios Diários
 
@@ -41,7 +41,7 @@ Este projeto em Python automatiza a distribuição de ordens de produção entre
    Para executar o arquivo de atualização (realizado diariamente) do gráfico de tendência dos relatórios é necessário:
 
    1. **Agrupar os relatórios**:
-   Crie uma pasta chamada '**Relatorios-Robo**' e coloque todos os relatórios gerados dentra dela.
+   Crie uma pasta chamada '**relatorios-robo**' e coloque todos os relatórios gerados dentra dela.
 
    2. **Execute o programa**: no terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo `.py` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Grafico-da-Utilizacao-dos-Robos.py)) deve estar localizado e execute o comando abaixo:
 
@@ -54,27 +54,27 @@ Este projeto em Python automatiza a distribuição de ordens de produção entre
    
    - Verificação das Ordens Processadas
      
-     - Ordens automatizadas: São aquelas que foram atribuídas aos robôs automaticamente pelo sistema de alocação, de acordo com a programação do APS Drummer e o tempo de produção.
+     - Ordens automatizadas: São aquelas que foram atribuídas aos robôs automaticamente pelo sistema de alocação, de acordo com a programação do APS Drummer e o tempo de produção
    
-     - Ordens manuais: São aquelas que foram atribuídas ao trabalho manual pelo sistema de alocação, de acordo com a programação do APS Drummer e o tempo de produção (normalmente devido a complexidade da peça ou falta de infraestrutura para realizar a solda no robô).
+     - Ordens manuais: São aquelas que foram atribuídas ao trabalho manual pelo sistema de alocação, de acordo com a programação do APS Drummer e o tempo de produção (normalmente devido a complexidade da peça ou falta de infraestrutura para realizar a solda no robô)
    
    - Análise Comportamental dos Robôs
    
-     - Comportamento diário: Verifico como as ordens são distribuídas entre os robôs e se algum robô está sendo sobrecarregado com ordens ou se está subutilizado. Essa análise é crucial para ajustar a carga de trabalho e evitar falhas ou gargalos.
+     - Comportamento diário: Verifico como as ordens são distribuídas entre os robôs e se algum robô está sendo sobrecarregado com ordens ou se está subutilizado. Essa análise é crucial para ajustar a carga de trabalho e evitar falhas ou gargalos
    
-     - Robôs subutilizados: Identifico se algum robô está frequentemente ocioso, o que pode indicar que ele não está sendo alocado corretamente ou que há capacidade excessiva para o volume de produção.
+     - Robôs subutilizados: Identifico se algum robô está frequentemente ocioso, o que pode indicar que ele não está sendo alocado corretamente ou que há capacidade excessiva para o volume de produção
    
-     - Robôs sobrecarregados: Verifico se algum robô está atingindo seu limite de tempo diário (528 minutos), o que indica que ele está sobrecarregado e pode precisar de redistribuição de tarefas para evitar falhas de produção ou atraso.
+     - Robôs sobrecarregados: Verifico se algum robô está atingindo seu limite de tempo diário (528 minutos), o que indica que ele está sobrecarregado e pode precisar de redistribuição de tarefas para evitar falhas de produção ou atraso
    
    - Análise de Tendências
    
-     - Aumento de ordens manuais: Através dos relatórios diários, posso identificar se há um aumento no número de ordens sendo feitas manualmente, o que pode indicar a necessidade de ajustes na programação do sistema APS Drummer ou na alocação dos robôs.
+     - Aumento de ordens manuais: Através dos relatórios diários, posso identificar se há um aumento no número de ordens sendo feitas manualmente, o que pode indicar a necessidade de ajustes na programação do sistema APS Drummer ou na alocação dos robôs
    
-     - Impacto de mudanças nas ordens: Quando há uma mudança significativa na programação ou um aumento da demanda, essa análise ajuda a entender como os robôs estão lidando com essas alterações, fornecendo informações valiosas para otimização futura.
+     - Impacto de mudanças nas ordens: Quando há uma mudança significativa na programação ou um aumento da demanda, essa análise ajuda a entender como os robôs estão lidando com essas alterações, fornecendo informações valiosas para otimização futura
    
    - Ajustes e Recomendações
    
-     - Com base na análise histórica, recomendo ajustes nas regras de alocação, como reconfigurar a distribuição de tarefas entre robôs específicos e genéricos, ajustar os tempos de alocação ou mesmo redistribuir a carga de trabalho manual para evitar falhas na produção.
+     - Com base na análise histórica, recomendo ajustes nas regras de alocação, como reconfigurar a distribuição de tarefas entre robôs específicos e genéricos, ajustar os tempos de alocação ou mesmo redistribuir a carga de trabalho manual para evitar falhas na produção
 
 6. 🎯 **Análise complementar de desempenho dos robôs**
 
@@ -132,8 +132,8 @@ Este projeto em Python automatiza a distribuição de ordens de produção entre
 Para rodar o programa, siga os passos abaixo:
 
 1. **Certifique-se de que os arquivos necessários estão na área de trabalho:**
-   - O arquivo `pecas-robo.csv` contendo as peças e seus tempos de fabricação.
-   - O arquivo `ORDENS-REFERENTE-A-XX.XX.XXXX.ods` com as ordens de produção com data futura de 3 dias úteis.
+   - O arquivo `pecas-robo.csv` contendo as peças e seus tempos de fabricação
+   - O arquivo `ORDENS-REFERENTE-A-XX.XX.XXXX.ods` com as ordens de produção com data futura de 3 dias úteis
 
 2. **Instale as dependências do projeto** (caso ainda não tenha feito):
    Abra o terminal (ou o prompt de comando) e execute o seguinte comando para instalar as bibliotecas necessárias:
