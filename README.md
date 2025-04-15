@@ -157,6 +157,8 @@ Após rodar o programa, os seguintes arquivos serão gerados:
   Relatório completo com gráficos e alocações.  
   👉 [Clique aqui para visualizar o relatório em PDF](https://github.com/azedokilmi/distribuicao-ordens-robos/raw/main/Pecas-e-Componentes-Relatorio-Ordens-11-04-2025.pdf)
 
+  ![Prévia do Relatório em PDF](https://github.com/azedokilmi/distribuicao-ordens-robos/raw/main/preview-pdf.png)
+
 - 📈 **Gráfico de Tempo dos Robôs**  
   Gráfico de barras mostrando o tempo trabalhado e o tempo ocioso por robô.  
   👉 [Clique aqui para visualizar o gráfico em PNG](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Tempo-Robos-11-04-2025.png)
