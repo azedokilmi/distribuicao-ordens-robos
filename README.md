@@ -131,18 +131,21 @@ Este projeto em Python automatiza a distribuição de ordens de produção entre
 
 Para rodar o programa, siga os passos abaixo:
 
-1. **Certifique-se de que os arquivos necessários estão na área de trabalho:**
+1. **Tenha o Python instalado**  
+   Recomendado: Python 3.8+
+
+2. **Certifique-se de que os arquivos necessários estão na área de trabalho:**
    - O arquivo `pecas-robo.csv` contendo as peças e seus tempos de fabricação
    - O arquivo `ORDENS-REFERENTE-A-XX.XX.XXXX.ods` com as ordens de produção com data futura de 3 dias úteis
 
-2. **Instale as dependências do projeto** (caso ainda não tenha feito):
+3. **Instale as dependências do projeto** (caso ainda não tenha feito):
    Abra o terminal (ou o prompt de comando) e execute o seguinte comando para instalar as bibliotecas necessárias:
 
    ```bash
    pip install pandas matplotlib fpdf pyexcel-ods
    ```
 
-3. **Execute o programa**: no terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo `.py` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Relatorio-das-Ordens-dos-Robos.py)) deve estar localizado e execute o comando abaixo:
+4. **Execute o programa**: no terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo `.py` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Relatorio-das-Ordens-dos-Robos.py)) deve estar localizado e execute o comando abaixo:
    
    Após a execução do script, os arquivos de saída serão gerados na mesma pasta onde o programa foi executado.
    ```bash
