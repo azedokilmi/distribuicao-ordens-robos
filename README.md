@@ -169,6 +169,7 @@ Após rodar o programa, os seguintes arquivos serão gerados:
   ![Gráfico de Tempo dos Robôs - 11/04/2025](https://github.com/azedokilmi/distribuicao-ordens-robos/raw/main/Tempo-Robos-11-04-2025.png)
 
 ## 💡 Ideias Futuras
+
 Interface gráfica (GUI) para facilitar o apontamento e visualização dos dados.
 
 Geração de arquivos via navegador (aplicação web).
@@ -182,5 +183,6 @@ Envio automático diário da programação específica para os robôs.
 Automação com dashboards interativos (Dash, Power BI etc.) ou sistemas integrados de monitoramento.
 
 ## ✍️ Autor
+
 Feito com dedicação por Pedro Cicilini de Nadai 💻
 GitHub: @azedokilmi
