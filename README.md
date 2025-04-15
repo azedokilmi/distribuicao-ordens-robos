@@ -152,7 +152,7 @@ Para rodar o programa, siga os passos abaixo:
    python Relatorio-das-Ordens-dos-Robos.py
    ```
 
-## 📂 O que será gerado
+## 📂 O que será Gerado
 
 Após rodar o programa, os seguintes arquivos serão gerados:
 
