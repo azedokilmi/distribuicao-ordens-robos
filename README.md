@@ -43,7 +43,9 @@ Este projeto em Python automatiza a distribuição de ordens de produção entre
    1. **Agrupar os relatórios**:
    Crie uma pasta chamada '**relatorios-robo**' e coloque todos os relatórios gerados dentra dela.
 
-   2. **Execute o programa**: no terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo `.py` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Grafico-da-Utilizacao-dos-Robos.py)) deve estar localizado e execute o comando abaixo:
+   2. **Execute o programa**:
+     
+      No terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo `.py` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Grafico-da-Utilizacao-dos-Robos.py)) deve estar localizado e execute o comando abaixo:
 
    Após a execução do script, os arquivos de saída serão gerados na mesma pasta onde o programa foi executado.
    
@@ -145,14 +147,16 @@ Para rodar o programa, siga os passos abaixo:
    pip install pandas matplotlib fpdf pyexcel-ods
    ```
 
-4. **Execute o programa**: no terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo `.py` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Relatorio-das-Ordens-dos-Robos.py)) deve estar localizado e execute o comando abaixo:
+4. **Execute o programa**:
+  
+   No terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo `.py` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Relatorio-das-Ordens-dos-Robos.py)) deve estar localizado e execute o comando abaixo:
    
    Após a execução do script, os arquivos de saída serão gerados na mesma pasta onde o programa foi executado.
    ```bash
    python Relatorio-das-Ordens-dos-Robos.py
    ```
 
-5. **🖱️ Executável OneFile (.exe)**
+7. **🖱️ Executável OneFile (.exe)**
 
    Para facilitar o uso diário e tornar o processo mais prático, foi gerado um executável "onefile" (.exe) que pode ser rodado diretamente com dois cliques, sem a necessidade de abrir o prompt de comando ou programas de codagem como JupyterLab ou VS Code.
 
