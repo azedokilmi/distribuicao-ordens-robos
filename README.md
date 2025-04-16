@@ -134,18 +134,14 @@ Para rodar o programa, siga os passos abaixo:
 1. **Tenha o Python instalado**  
    Recomendado: Python 3.8+
 
-2. **Certifique-se de que os arquivos necessários estão na área de trabalho:**
-   - O arquivo `pecas-robo.csv` contendo as peças e seus tempos de fabricação
-   - O arquivo `ORDENS-REFERENTE-A-XX.XX.XXXX.ods` com as ordens de produção com data futura de 3 dias úteis
-
-3. **Instale as dependências do projeto** (caso ainda não tenha feito):
+2. **Instale as dependências do projeto** (caso ainda não tenha feito):
    Abra o terminal (ou o prompt de comando) e execute o seguinte comando para instalar as bibliotecas necessárias:
 
    ```bash
    pip install pandas matplotlib fpdf pyexcel-ods
    ```
 
-4. **Execute o programa**:
+3. **Execute o programa**:
   
    No terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo `.py` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Relatorio-das-Ordens-dos-Robos.py)) deve estar localizado e execute o comando abaixo:
    
@@ -154,26 +150,26 @@ Para rodar o programa, siga os passos abaixo:
    python Relatorio-das-Ordens-dos-Robos.py
    ```
 
-7. **🖱️ Executável OneFile (.exe)**
+4. **🖱️ Executável OneFile (.exe)**
 
    Para facilitar o uso diário e tornar o processo mais prático, foi gerado um executável "onefile" (.exe) que pode ser rodado diretamente com dois cliques, sem a necessidade de abrir o prompt de comando ou programas de codagem como JupyterLab ou VS Code.
 
-   📂 O arquivo .exe está localizado na área de trabalho do Windows, e ao executá-lo, o processo funciona normalmente como se estivesse rodando o script .py.
+   📂 O arquivo `.exe` está localizado na área de trabalho do Windows, e ao executá-lo, o processo funciona normalmente como se estivesse rodando o script `.py`.
 
 ## 📂 O que será Gerado
 
 Após rodar o programa, os seguintes arquivos serão gerados:
 
-- 📄 **Relatório em PDF**  
-  Relatório completo com gráficos e alocações.  
-  👉 [Clique aqui para visualizar o relatório em PDF](https://github.com/azedokilmi/distribuicao-ordens-robos/raw/main/Pecas-e-Componentes-Relatorio-Ordens-11-04-2025.pdf)
-
+- 📄 **Relatório em PDF**
+  
+  Relatório completo com gráficos e alocações (👉 [Clique aqui para visualizar o relatório em PDF](https://github.com/azedokilmi/distribuicao-ordens-robos/raw/main/Pecas-e-Componentes-Relatorio-Ordens-11-04-2025.pdf)).
+  
   ![Prévia do Relatório em PDF](https://github.com/azedokilmi/distribuicao-ordens-robos/raw/main/preview-pdf.png)
 
-- 📈 **Gráfico de Tempo dos Robôs**  
-  Gráfico de barras mostrando o tempo trabalhado e o tempo ocioso por robô.  
-  👉 [Clique aqui para visualizar o gráfico em PNG](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Tempo-Robos-11-04-2025.png)
-
+- 📈 **Gráfico de Tempo dos Robôs**
+  
+  Gráfico de barras mostrando o tempo trabalhado e o tempo ocioso por robô (👉 [Clique aqui para visualizar o gráfico em PNG](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Tempo-Robos-11-04-2025.png)).
+  
   ![Gráfico de Tempo dos Robôs - 11/04/2025](https://github.com/azedokilmi/distribuicao-ordens-robos/raw/main/Tempo-Robos-11-04-2025.png)
 
 ## 💡 Ideias Futuras
