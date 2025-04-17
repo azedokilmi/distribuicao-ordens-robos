@@ -163,11 +163,12 @@ Para rodar o programa, siga os passos abaixo:
    No terminal (ou prompt de comando), navegue até a área de trabalho onde o arquivo `.py` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/Relatorio-das-Ordens-dos-Robos.py)) deve estar localizado e execute o comando abaixo:
    
    Após a execução do script, os arquivos de saída serão gerados na mesma pasta onde o programa foi executado.
+   
    ```bash
    python Relatorio-das-Ordens-dos-Robos.py
    ```
 
-4. **🖱️ Executável OneFile (.exe)**
+5. **🖱️ Executável OneFile (.exe)**
 
    Para facilitar o uso diário e tornar o processo mais prático, foi gerado um executável "onefile" (.exe) que pode ser rodado diretamente com dois cliques, sem a necessidade de abrir o prompt de comando ou programas de codagem como JupyterLab ou VS Code.
 
