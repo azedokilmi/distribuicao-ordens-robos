@@ -7,6 +7,7 @@ Este projeto em Python automatiza a distribuição de ordens de produção entre
 ## ⚙️ Como Funciona?
 
 1. 📂 **Leitura dos arquivos**
+   
    - Lê uma planilha de programação `.ods` (👉 [Clique aqui para visualizar o arquivo](https://github.com/azedokilmi/distribuicao-ordens-robos/blob/main/ORDENS-REFERENTE-A-17.04.2025.ods)) com as ordens de produção, referenciando códigos de itens montados e soldados manualmente e em robôs (arquivo gerado automaticamente pelo sistema APS Drummer com data futura de 3 dias úteis — ou seja, a data do arquivo será a data atual + 3 dias úteis, desconsiderando sábados e domingos).
 
    ![Prévia da Planilha .ods](https://github.com/azedokilmi/distribuicao-ordens-robos/raw/main/preview-ods.png)
@@ -15,22 +16,33 @@ Este projeto em Python automatiza a distribuição de ordens de produção entre
   
     ![Prévia do Arquivo .csv](https://github.com/azedokilmi/distribuicao-ordens-robos/raw/main/preview-csv.png)
 
-2. 🧠 **Processamento**
+3. 🧠 **Processamento**
+   
    - Filtra ordens válidas conforme as peças cadastradas. Se a ordem no `.ods` possuir um código presente no `.csv`, ela é reconhecida como feita no robô e será processada.
+     
    - Agrupa ordens semelhantes para otimizar a distribuição da produção.
+     
    - Distribui as ordens entre os robôs considerando:
+     
      - Robôs específicos para determinadas peças
+       
      - Robôs genéricos com balanceamento de carga
+       
      - Tempo total de trabalho diário (528 minutos)
 
-3. 📊 **Relatório**
+5. 📊 **Relatório**
+   
    - Geração de um gráfico de tempo trabalhado e ocioso por robô (perfil de carga).
+     
    - Criação de um PDF com:
+     
      - Ordens alocadas por robô
+       
      - Ordens não alocadas
+       
      - Resumo estatístico completo
 
-4. 📈 Análise Histórica dos Relatórios Diários
+7. 📈 Análise Histórica dos Relatórios Diários
 
    Desde o mês de novembro de 2024, venho gerando esse relatório de perfil de carga diariamente a partir do script de distribuição de ordens para robôs, que permite monitorar o comportamento de alocação ao longo do tempo. Cada relatório gerado inclui gráficos e informações sobre o tempo trabalhado e ocioso de cada robô, bem como a quantidade de ordens realizadas manualmente ou com auxílio do robô.
    
@@ -76,7 +88,7 @@ Este projeto em Python automatiza a distribuição de ordens de produção entre
    
      - Com base na análise histórica, recomendo ajustes nas regras de alocação, como reconfigurar a distribuição de tarefas entre robôs específicos e genéricos, ajustar os tempos de alocação ou mesmo redistribuir a carga de trabalho manual para evitar falhas na produção
 
-6. 🎯 **Análise complementar de desempenho dos robôs**
+8. 🎯 **Análise complementar de desempenho dos robôs**
 
    Além da alocação automatizada, este projeto permite uma análise técnica aprofundada da performance de cada robô, baseada nas informações presentes no gráfico e no relatório gerado. Esses dados fornecem uma visão estratégica para tomada de decisão em engenharia de produção.
 
@@ -87,7 +99,8 @@ Este projeto em Python automatiza a distribuição de ordens de produção entre
    Permite identificar se há robôs enfrentando ordens mais complexas ou demoradas.
    
    Fórmula sugerida:
-   tempo total trabalhado do robô / número de ordens atribuídas ao robô
+
+   Fórmula: tempo total trabalhado do robô / número de ordens atribuídas ao robô
    
    - ⚠️ Alocação de tarefas críticas
    
@@ -117,12 +130,16 @@ Este projeto em Python automatiza a distribuição de ordens de produção entre
 
 ⚠️ Ambos os arquivos devem estar na **área de trabalho**:
 
-- `pecas-robo.csv`  
+- `pecas-robo.csv`
+  
   → Deve conter duas colunas:
+
   - `id` → código da peça
+    
   - `tempo` → tempo por peça em minutos
 
-- `ORDENS-REFERENTE-A-XX.XX.XXXX.ods`  
+- `ORDENS-REFERENTE-A-XX.XX.XXXX.ods`
+  
   → Gerado automaticamente pelo APS Drummer com base em **3 dias úteis à frente**.
 
 ---
